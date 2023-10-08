@@ -6,9 +6,9 @@ A basic Unix-like shell implemented in C.
 * [Features](#features)
 * [Usage](#usage)
 * [Commands](#commands)
-* Compile and Run
-* Contributing
-* License
+* [Compile and Run](#compile-and-run)
+* [Contributing](#contributing)
+
 
 ## Introduction
 The Simple C Shell is a minimalistic Unix-like shell written in the C programming language. This shell provides a basic command-line interface that allows users to execute various commands, manage background jobs, and perform I/O redirection.
@@ -46,7 +46,8 @@ The Simple C Shell supports the following commands and features:
 * Pipeline Commands:
     * 'command1 | command2': Execute command1 and use its output as input for command2.
 
-## Compilation
+## Compile and Run
+
 
 To compile the Simple C Shell, use the provided `makefile`. It's a simple way to build the executable. Here are the compilation steps:
 
@@ -56,3 +57,12 @@ To compile the Simple C Shell, use the provided `makefile`. It's a simple way to
 
    ```bash
    make
+4. Run the compiled executable:
+    ```bash
+    ./vash
+5. You will see the shell prompt (':)'). Enter commands and press Enter to execute them.
+
+## Contributing
+Contributions to this Simple C Shell project are welcome! If you find issues or have ideas for improvements, please open an issue or create a pull request on the GitHub repository.
+
+
