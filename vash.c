@@ -38,7 +38,7 @@ void sigint_handler(int signum) {
         exit(0);
     } else {
         // The program has not yet received Ctrl+C, stop the current command
-        printf("");
+        printf("\n");
         ctrlC_pressed = 1;
     }
 }
