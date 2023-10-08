@@ -60,7 +60,7 @@ To compile the Simple C Shell, use the provided `makefile`. It's a simple way to
 4. Run the compiled executable:
     ```bash
     ./vash
-5. You will see the shell prompt (':)'). Enter commands and press Enter to execute them.
+5. You will see the shell prompt (' :) '). Enter commands and press Enter to execute them.
 
 ## Contributing
 Contributions to this Simple C Shell project are welcome! If you find issues or have ideas for improvements, please open an issue or create a pull request on the GitHub repository.
