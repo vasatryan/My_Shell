@@ -5,7 +5,7 @@ A basic Unix-like shell implemented in C.
 * [Introduction](#introduction)
 * [Features](#features)
 * [Usage](#usage)
-* Commands
+* [Commands](#commands)
 * Compile and Run
 * Contributing
 * License
@@ -45,3 +45,14 @@ The Simple C Shell supports the following commands and features:
     * '>>' [output file]: Redirect output to a file (append).
 * Pipeline Commands:
     * 'command1 | command2': Execute command1 and use its output as input for command2.
+
+## Compilation
+
+To compile the Simple C Shell, use the provided `makefile`. It's a simple way to build the executable. Here are the compilation steps:
+
+1. Open your terminal.
+2. Navigate to the directory containing the `makefile` and the source code (`vash.c`).
+3. Run the following command to compile the code:
+
+   ```bash
+   make
