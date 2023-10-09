@@ -22,7 +22,7 @@ int nextJobNumber = 1; // Keeps track of the next available job number
 int runInBackground = 0;
 volatile int ctrlC_pressed = 0;
 
-void sigint_handler(int signum) {
+void sigint_handler() {
     if (ctrlC_pressed == 1) {
         // The program has already received Ctrl+C once, exit the program
         printf("\n");
