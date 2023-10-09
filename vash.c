@@ -20,15 +20,6 @@ Job jobs[MAX_JOBS]; // Array to store background jobs
 int jobCount = 0;
 int nextJobNumber = 1; // Keeps track of the next available job number
 int runInBackground = 0;
-
-void welcomeShell() {
-    printf("**************************************\n");
-    printf("**************************************\n\n");
-    printf("Hello My dear, this is my simple shell\n");
-    printf("\n\n**************************************\n");
-    printf("**************************************\n");
-}
-
 volatile int ctrlC_pressed = 0;
 
 void sigint_handler(int signum) {
@@ -41,6 +32,27 @@ void sigint_handler(int signum) {
         printf("\n");
         ctrlC_pressed = 1;
     }
+}
+
+void welcomeShell() {
+    printf("**************************************\n");
+    printf("**************************************\n\n");
+    printf("Hello My dear, this is my simple shell\n");
+    printf("\n\n**************************************\n");
+    printf("**************************************\n");
+}
+
+void executeHelp() {
+    puts("\n***WELCOME TO MY SHELL HELP***"
+         "\nList of Commands supported:"
+         "\n>cd"
+         "\n>ls"
+         "\n>exit - to close program"
+         "\n>Ctrl+C to exit program"
+         "\n>all other general commands available in UNIX shell"
+         "\n>jobs - list background jobs"
+         "\n>fg <job number> - bring a background job to the foreground"
+         "\n>bg <job number> - restart a stopped background job");
 }
 
 void addJob(pid_t pid, const char* cmd) {
@@ -87,18 +99,6 @@ void executeCd(char* path) {
     }
 }
 
-void executeHelp() {
-    puts("\n***WELCOME TO MY SHELL HELP***"
-         "\nList of Commands supported:"
-         "\n>cd"
-         "\n>ls"
-         "\n>exit - to close program"
-         "\n>Ctrl+C to exit program"
-         "\n>all other general commands available in UNIX shell"
-         "\n>jobs - list background jobs"
-         "\n>fg <job number> - bring a background job to the foreground"
-         "\n>bg <job number> - restart a stopped background job");
-}
 
 char* scanCmd() {
     char inputCommand[MAX_COMMAND_LENGTH];
