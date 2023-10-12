@@ -25,9 +25,11 @@ The Simple C Shell is a minimalistic Unix-like shell written in the C programmin
 To use the Simple C Shell, follow these basic instructions:
 
 1. Clone or download the repository to your local machine.
-2. Compile the shell program using a C compiler (e.g., gcc).
-3. Run the compiled executable to start the shell.
-4. Enter commands at the shell prompt, and press Enter to execute them.
+   ```bash
+   git clone https://github.com/vasatryan/My_Shell.git
+3. Compile the shell program using a C compiler (e.g., gcc).
+4. Run the compiled executable to start the shell.
+5. Enter commands at the shell prompt, and press Enter to execute them.
 
 ## Commands
 The Simple C Shell supports the following commands and features:
