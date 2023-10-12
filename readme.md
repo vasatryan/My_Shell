@@ -27,6 +27,7 @@ To use the Simple C Shell, follow these basic instructions:
 1. Clone or download the repository to your local machine.
    ```bash
    git clone https://github.com/vasatryan/My_Shell.git
+   cd My_Shell
 3. Compile the shell program using a C compiler (e.g., gcc).
 4. Run the compiled executable to start the shell.
 5. Enter commands at the shell prompt, and press Enter to execute them.
